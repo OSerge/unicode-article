@@ -50,7 +50,7 @@ alphabet (upper and lower case), punctuation, space, and various service
 characters (non-typed characters). But the fact is that in accordance with ASCII, 
 7 bits are enough for encoding of all characters of the ASCII table.
 
-![ASCII table]({{ site.url }}/static/images/ascii_table.png "ASCII table")
+![ASCII table](/static/images/ascii_table.png "ASCII table")
 
 Moreover, most computers of that time used 8-bit memory registers. 
 Thus, you could freely store one coded character and at the same time 1 bit was 
@@ -107,7 +107,7 @@ Before the Unicode era each character directly corresponded to its bit
 representation in memory. For example, in ASCII the Latin capital "A" 
 corresponds to byte 0x41:
 
-![Latin capital "A" encoding in ASCII]({{ site.url }}/static/images/ascii_0x41.png "Latin capital "A" encoding in ASCII")
+![Latin capital "A" encoding in ASCII](/static/images/ascii_0x41.png "Latin capital "A" encoding in ASCII")
 
 There is a different approach is used in Unicode. Here we introduce an additional
  concept - _code point_. It's like an intermediate layer. It has a format like 
@@ -118,7 +118,7 @@ There is a different approach is used in Unicode. Here we introduce an additiona
  code point depends on the chosen _Unicode transformation format (UTF)_. 
  For example, it can be UTF-8, UTF-16 or UTF-32.
 
-![Code point]({{ site.url }}/static/images/code_point.png "Code point")
+![Code point](/static/images/code_point.png "Code point")
 
 The code point resembles something like an interface, doesn't it?! 
 Now it doesn’t matter how the symbol will be displayed on the monitor or 
@@ -184,7 +184,7 @@ the most common UTF-8 and UTF-16 formats deserve attention.
 The range the code point falls and the octets number can be quickly 
 determined from the very useful table below.
 
-![UTF-8 table]({{ site.url }}/static/images/utf_8_octets_table.png "UTF-8 table")
+![UTF-8 table](/static/images/utf_8_octets_table.png "UTF-8 table")
 
 Let's take a closer look at the UTF-8 character encoding mechanism:
 
@@ -206,7 +206,7 @@ Let's take a closer look at the UTF-8 character encoding mechanism:
    octet are filled in, move on to the next to last octet, then to the preceding 
    one, etc. until all x bits are filled in. Point 4 is clearly shown in the image below.
 
-![UTF-8 encoding]({{ site.url }}/static/images/utf_8_encoding.png "UTF-8 encoding")
+![UTF-8 encoding](/static/images/utf_8_encoding.png "UTF-8 encoding")
 
 This procedure is algorithmically justified and optimized. 
 The same is about UTF-16. In this connection, conversions between 
@@ -249,7 +249,7 @@ encoding characters that require more than 2 bytes. Characters in the range
    which is in the range 0xDC00...0xDFFF. 
    Schematically, it looks like this: 
 
-![UTF-16 encoding]({{ site.url }}/static/images/utf_16_encoding.png "UTF-16 encoding")
+![UTF-16 encoding](/static/images/utf_16_encoding.png "UTF-16 encoding")
 
 UTF-16 has three sub-formats: BE, LE and unmarked. 
 The BE form uses big-endian byte serialization (most significant byte first), 
@@ -269,11 +269,11 @@ Let's try to summarize information
 about these encodings and identify their pros and cons.
 
 The summarized basic properties of encodings are presented in the table:
-![Basic properties table]({{ site.url }}/static/images/props_table.png "Basic properties table")
+![Basic properties table](/static/images/props_table.png "Basic properties table")
 
 And the following table shows the positive and negative properties 
 of these encodings:
-![Pros and cons]({{ site.url }}/static/images/pros_cons.png "Pros and cons")
+![Pros and cons](/static/images/pros_cons.png "Pros and cons")
 
 ## Conclusion
 
