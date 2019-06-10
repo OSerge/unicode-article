@@ -107,7 +107,7 @@ Before the Unicode era each character directly corresponded to its bit
 representation in memory. For example, in ASCII the Latin capital "A" 
 corresponds to byte 0x41:
 
-![Latin capital "A" encoding in ASCII](/static/images/ascii_0x41.png "Latin capital "A" encoding in ASCII")
+![Latin capital A encoding in ASCII](/static/images/ascii_0x41.png "Latin capital \"A\" encoding in ASCII")
 
 There is a different approach is used in Unicode. Here we introduce an additional
  concept - _code point_. It's like an intermediate layer. It has a format like 
