@@ -30,7 +30,7 @@ Joel Spolsky - developer, StackOverflow CEO.</i>
 </p>
 <p>
     The purpose of this article is to review the technical features of the Unicode 
-    dard and the Unicode transforming formats. In addition, a comparison of 
+    standard and the Unicode transforming formats. In addition, a comparison of 
     transforming formats will help decide on the use of these formats in software 
     development.
 </p>
